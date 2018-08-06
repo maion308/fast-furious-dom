@@ -9,7 +9,7 @@ let quotes = [
 
 document.addEventListener('DOMContentLoaded', function(event) {
   // Random quote of the day generator
-  const randomQuote = function() {
+  function randomQuote() {
     document.querySelector('#quote-of-the-day').textContent = `"${
       quotes[Math.floor(Math.random() * quotes.length)]
     }"`;
@@ -19,16 +19,43 @@ document.addEventListener('DOMContentLoaded', function(event) {
   // Do all of your work inside the document.addEventListener
 
   // Part 1
+  function shortenPageTitle() {
+
+  }
+
 
   // Part 2
+  function changeBodyBgColor() {
+
+  }
+
 
   // Part 3
+  function removeLastFavoriteThing() {
+
+  }
+
 
   // Part 4
+  function makeSpecialTitlesBigger() {
+
+  }
+
 
   // Part 5
+  functionRemoveChicagoRace() {
+
+  }
 
   // Part 6
+  function addPastRace() {
+
+  }
+
 
   // Part 7
+  function createNewBlogPost() {
+
+  }
+
 });

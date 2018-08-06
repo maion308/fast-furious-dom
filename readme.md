@@ -19,7 +19,9 @@ This [DOM Gist](https://gist.github.com/thegitfather/9c9f1a927cd57df14a59c268f11
 
 ## Setup
 
-You're provided a basic website with included `index.html`, `style.css`, and `script.js`. All of your work will go in `script.js` - you shouldn't have to edit `index.html` or `style.css`. Please create individual functions for each solution. Don't forget to **call** the function once you're finished.
+You're provided a basic website with included `index.html`, `style.css`, and `script.js`. All of your work will go in `script.js` - you shouldn't have to edit `index.html` or `style.css`. 
+
+There are empty functions for each part. Don't forget to **call** the function to test its utility.
 
 ## Completion
 
@@ -31,7 +33,7 @@ Let's start with some simple query selecting.
 
 #### Part 1
 
-DOM's personal website title is a bit wordy. Write a JavaScript statement that selects the `#main-title` ID element. Remember there are a couple of ways to query **id**. Change the **text** of the title to something shorter.
+DOM's personal website title is a bit wordy. Write a JavaScript statement that selects the `#main-title` ID element. Change the **text** of the title to something shorter.
 
 #### Part 2
 
