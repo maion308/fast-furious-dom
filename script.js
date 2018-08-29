@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
 
 
   // Part 5
-  functionRemoveChicagoRace() {
+  function RemoveChicagoRace() {
 
   }
 
