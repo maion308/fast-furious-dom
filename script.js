@@ -8,6 +8,7 @@ let quotes = [
 ];
 
 document.addEventListener('DOMContentLoaded', function(event) {
+
   // Random quote of the day generator
   function randomQuote() {
     document.querySelector('#quote-of-the-day').textContent = `"${
@@ -20,7 +21,8 @@ document.addEventListener('DOMContentLoaded', function(event) {
 
   // Part 1
   function shortenPageTitle() {
-
+let myTitle = document.getElementById('main-title');
+myTitle.innerHTML = "Welcome to my homepage."
   }
 
 
@@ -57,5 +59,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
   function createNewBlogPost() {
 
   }
+
+shortenPageTitle();
 
 });
