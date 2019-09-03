@@ -53,7 +53,6 @@ document.body.style.backgroundImage = "linear-gradient(to bottom, yellow , red, 
   // Part 5
   function RemoveChicagoRace() {
 let chiTown = document.getElementById("past-races").children;
-console.log(chiTown);
 for(i = 0; i < chiTown.length; i++){
   if(chiTown[i].innerHTML == "Chicago"){
     chiTown[i].remove();
@@ -63,8 +62,16 @@ for(i = 0; i < chiTown.length; i++){
   }
 
   // Part 6
+  // Although I am aware how to do this
+  // it is best to use w3schools for this one
+  // This one was done courtesy of w3schools
+  // here is the link to the source code:
+  // https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_node_appendchild
   function addPastRace() {
-
+    var node = document.createElement("li");
+    var textnode = document.createTextNode("Orlando");
+    node.appendChild(textnode);
+    document.getElementById("past-races").appendChild(node);
   }
 
 
@@ -78,4 +85,5 @@ changeBodyBgColor();
 removeLastFavoriteThing();
 makeSpecialTitlesBigger();
 RemoveChicagoRace();
+addPastRace();
 });
