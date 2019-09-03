@@ -34,8 +34,11 @@ document.body.style.backgroundImage = "linear-gradient(to bottom, yellow , red, 
 
   // Part 3
   function removeLastFavoriteThing() {
-
-  }
+ let favThings = document.getElementById("favorite-things").lastElementChild;
+ console.log(favThings.innerHTML)
+ favThings.remove(favThings);
+ 
+ }
 
 
   // Part 4
@@ -62,5 +65,5 @@ document.body.style.backgroundImage = "linear-gradient(to bottom, yellow , red, 
 
 shortenPageTitle();
 changeBodyBgColor();
-
+removeLastFavoriteThing();
 });
