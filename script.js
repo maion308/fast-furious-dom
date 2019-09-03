@@ -28,7 +28,7 @@ myTitle.innerHTML = "Welcome to my homepage."
 
   // Part 2
   function changeBodyBgColor() {
-
+document.body.style.backgroundImage = "linear-gradient(to bottom, yellow , red, blue)";
   }
 
 
@@ -61,5 +61,6 @@ myTitle.innerHTML = "Welcome to my homepage."
   }
 
 shortenPageTitle();
+changeBodyBgColor();
 
 });
