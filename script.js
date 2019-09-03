@@ -52,6 +52,13 @@ document.body.style.backgroundImage = "linear-gradient(to bottom, yellow , red, 
 
   // Part 5
   function RemoveChicagoRace() {
+let chiTown = document.getElementById("past-races").children;
+console.log(chiTown);
+for(i = 0; i < chiTown.length; i++){
+  if(chiTown[i].innerHTML == "Chicago"){
+    chiTown[i].remove();
+  }
+}
 
   }
 
@@ -70,4 +77,5 @@ shortenPageTitle();
 changeBodyBgColor();
 removeLastFavoriteThing();
 makeSpecialTitlesBigger();
+RemoveChicagoRace();
 });
