@@ -43,7 +43,10 @@ document.body.style.backgroundImage = "linear-gradient(to bottom, yellow , red, 
 
   // Part 4
   function makeSpecialTitlesBigger() {
-
+    var myFont = document.querySelectorAll(`.special-title`);
+    for ( var i = 0; i < myFont.length; i ++ ) {
+        myFont[i].style.fontSize = "2rem";
+    }
   }
 
 
@@ -66,4 +69,5 @@ document.body.style.backgroundImage = "linear-gradient(to bottom, yellow , red, 
 shortenPageTitle();
 changeBodyBgColor();
 removeLastFavoriteThing();
+makeSpecialTitlesBigger();
 });
