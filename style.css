@@ -52,6 +52,18 @@ ul {
   font-size: 1.5rem;
 }
 
+.new-para {
+  color: rgb(0, 0, 0);
+  display: block;
+  font-family: FastFuriousFont;
+  font-size: 1.5rem;
+  height: 87px;
+  margin-block-end: 24px;
+  margin-block-start: 24px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+}
+
 .family-photo {
   width: 100%;
 }

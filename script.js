@@ -77,6 +77,42 @@ for(i = 0; i < chiTown.length; i++){
 
   // Part 7
   function createNewBlogPost() {
+    // Create a new `.blog-post` corresponding to the new city 
+    // added in **Part 6**. You will have to create a new `<div>` 
+    // with class of `.blog-post`, a new `<h1>` with text, and a 
+    // new `<p>` with some text. Think about what order you want 
+    // to create the elements, and what order you want to append 
+    // them in.
+
+let mainDiv = document.querySelector('.main');
+
+let newDiv = document.createElement('div');
+newDiv.setAttribute("class", "blog-post purple");
+let myH1 = document.createElement('h1');
+// myCity = document.createTextNode("Orlando");
+// myH1.appendChild(myCity);
+myH1.innerHTML = "Orlando";
+// let h1Txt = document.createTextNode("Orlando");
+let myPara = document.createElement('p');
+myPara.setAttribute("class", "new-para")
+myPara.innerHTML = "I DRIFTED AROUND UNIVERSAL STUDIOS!"
+// let paraNode = document.createTextNode("I drifted Universal around Universal Studios!")
+// myPara.appendChild(paraNode);
+// myH1.appendChild(h1Txt);
+myH1.appendChild(myPara);
+newDiv.appendChild(myH1);
+mainDiv.appendChild(newDiv);
+console.log(mainDiv);
+
+
+
+
+
+    
+    // <div class="blog-post purple">
+    // <h1>Los Angeles</h1>
+    // <p>I RACED PAUL WALKER AND WON HIS CAR WITH MY CAR!</p>
+    // </div>
 
   }
 
@@ -86,4 +122,5 @@ removeLastFavoriteThing();
 makeSpecialTitlesBigger();
 RemoveChicagoRace();
 addPastRace();
+createNewBlogPost();
 });
